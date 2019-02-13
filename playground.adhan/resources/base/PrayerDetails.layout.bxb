@@ -1,0 +1,15 @@
+layout {
+  match: Prayer (this)
+  mode (Details)
+  
+  content {
+    section {
+      content {
+        paragraph {
+          value ("#{value(this.prayerName)} is at #{value(this.prayerTime)}")
+          style (Detail_L_Soft)
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+action (GetPrayerTimes) {
+  type (Search)
+  description (Get Prayer times for a location)
+
+  collect {
+
+    input-group (options) {
+      requires (ZeroOrMoreOf)
+
+      collect {
+        input (date) {
+          type (time.Date)
+          min (Optional) max (One)
+          default-init {
+            intent {
+              goal: time.Date
+              value: time.NamedDate (Today)
+            }
+          }
+        }
+
+        input (method) {
+          type (Method)
+          min (Optional) max (One)
+          default-init {
+            intent {
+              goal: Method
+              value: Method (Islamic Society of North America (ISNA))        
+            }
+          }
+        }
+
+        input (school) {
+          type (School)
+          min (Optional) max (One)
+          default-init {
+            intent {
+              goal: School
+              value: School (Shafi)
+            }
+          }
+        }
+
+        input (latitudeAdjustmentMethod) {
+          type (LatitudeAdjustmentMethod)
+          min (Optional) max (One)
+          // default-init {
+          //   intent {
+          //     goal: LatitudeAdjustmentMethod
+          //     value: LatitudeAdjustmentMethod(Angle Based)
+          //   } 
+          // }
+        }
+
+        input (prayerName) {
+          type (PrayerNames) 
+          min (Optional) max (One)
+        }
+
+      }
+    }
+
+    //     input (resolvedAddress) {
+    //       min (Required)
+    //       type (geo.NamedPoint)
+    // 
+    //       default-init {
+    //         if ($user.currentLocation.$exists) {
+    //           intent {
+    //             goal: geo.NamedPoint
+    //             value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
+    //           }
+    //         } else {
+    //           intent {
+    //             goal: geo.NamedPoint
+    //             value-set { geo.NamedPoint @prompt-behavior(AlwaysElicitation) }
+    //           }
+    //         }
+    //       }
+    // 
+    //       default-select {
+    //         with-learning
+    //         with-rule {
+    //           select-first
+    //         }
+    //       }
+    //     }
+    input-group(where-group) {
+      requires (OneOf)
+      collect {
+        input (whereFromHistoryOrInput) {
+          type (geo.NamedPoint)
+          min (Optional) max(One)
+          hidden
+          //auto select the first geo.NamedPoint from the list of candidates
+          default-select {
+            with-learning
+            with-rule {
+              select-first
+            }
+          }
+        }
+        computed-input (whereFromCurrentLocation) {
+          type (geo.NamedPoint)
+          min (Optional)
+          hidden
+
+          compute {
+            if ($user.currentLocation.$exists) {
+              intent {
+                goal: geo.NamedPoint
+                value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
+              }
+            } else {
+              intent {
+                goal: geo.NamedPoint
+                value-set { geo.NamedPoint @prompt-behavior(AlwaysElicitation) }
+              }
+            }
+          }
+        }
+      }
+    }
+    computed-input (resolvedAddress) {
+      min (Required)
+      type (geo.NamedPoint)
+      compute {
+        if (exists(whereFromHistoryOrInput)) {
+          intent {
+            goal{geo.NamedPoint}
+            value{$expr(whereFromHistoryOrInput)}
+          }
+        } else {
+          intent {
+            goal{geo.NamedPoint}
+            value{$expr(whereFromCurrentLocation)}
+          }
+        }
+      }
+    }
+  }
+  output (PrayerTimes)
+}

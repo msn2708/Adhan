@@ -1,0 +1,5 @@
+train (t-3ffxxdnzl9pwezda0natdea4v) {
+  utterance ([g:GetPrayerTimes] get prayer times)
+  plan (Y2BmkCnISaxML8ovzUvRS0zJSMzTCyhKrEwtCsnMTS1mkMeQdU8tQVagTUBBXXlGalGqLkhFAQMTAyMQMwBJRgYGGA0A)
+  last-modified (1549752132169)
+}

@@ -1,0 +1,12 @@
+enum (PrayerNames) {
+  description (Enumeration of the 5 Prayers)
+  symbol (Fajr)
+  symbol (Sunrise)
+  symbol (Dhuhr )
+  symbol (Asr)
+  symbol (Sunset)
+  symbol (Maghrib)
+  symbol (Isha)
+  symbol (Imsak)
+  symbol (Midnight)
+}

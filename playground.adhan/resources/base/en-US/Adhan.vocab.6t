@@ -1,0 +1,25 @@
+vocab (PrayerNames) {
+  $sort-desc {"Imsak", "Fajr","Sunrise", "Dhuhr", "Asr", "Sunset", "Maghrib", "Isha", "Midnight"}
+  "Fajr" {"Fajr" "fudger" "fodjour" "fajar" "fodder" "fudge"}
+  "Dhuhr" {"Dhuhr" "Zohar" "Dohar" "the heart"}
+  "Asr" {"Asr" "Awesome" "Azur" }
+  "Maghrib" {"Maghrib" "Maarib" "Moghreb" "money"}
+  "Isha" {"Isha" "Asia" "Aricia" }
+  "Imsak" {"Imsak"}
+  "Sunrise" {"Sunrise"}
+  "Sunset" {"Sunset"}
+  "Midnight" {"Midnight"}
+}
+
+vocab (School) {
+  "Shafi" {"Shafaii", "Shafi"}
+  "Hanafi" {"Hanafi"}
+}
+
+vocab (Method) {
+  "Shia Ithna-Ashari, Leva Institute, Qum" {"Shia", "Ithna-Ashari" "Jafari"}
+  "University of Islamic Sciences, Karachi" {"Karachi"}
+}
+
+
+

@@ -1,0 +1,25 @@
+action (GetAddressFromLocation) {
+  type(Constructor)
+  description (__DESCRIPTION__)
+  collect {
+    computed-input (resolvedAddress) {
+      type (geo.NamedPoint)
+      compute {
+        intent {
+          goal: geo.NamedPoint
+          if (exists($user.currentLocation)) {
+            // value-set: geo.CurrentLocation {$expr ($user.currentLocation)}
+            subplan {
+              goal: geo.ConstructNamedPointFromPoint
+              value-set: geo.CurrentLocation {$expr ($user.currentLocation)}
+            }
+
+          } else {
+            value-set { geo.NamedPoint @prompt-behavior(AlwaysSelection) }
+          }
+        }
+      }
+    }
+  }
+  output (geo.NamedPoint)
+}

@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: PrayerTimes(this)
+  template("Prayer times for #{value(this.resolvedAddress.address)}")
+}

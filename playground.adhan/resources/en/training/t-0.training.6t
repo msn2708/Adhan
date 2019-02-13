@@ -1,0 +1,5 @@
+train (t-0md4gv94mt7nn45td2sygara1) {
+  utterance ("[g:PrayerTimes] what time is (fajr)[v:PrayerNames:Fajr] at (san jose)[v:viv.geo.SearchTerm]")
+  plan (hY7BCsIwDIZ/3Zx61ZMgePQg9h08eZOBe4HiQldw7Wi7yS4+uy2jKKgsEEi+fCTBEtvmznthdKtKxsuKK5Yb3pMpZE0Wu6/pmdynsB8RnrpxUiuLw5j4qMjQMRjN36cuPNxcdbJjgjQLbZlrqRzWkZ1ap20rBFmHzQ843HnvuBI3t6ogU2OBCaZIkGKGDHPfw5OBBZL5OkasEp9pMF8=)
+  last-modified (1549518697489)
+}

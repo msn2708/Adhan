@@ -1,0 +1,5 @@
+train (t-h3835a2bq9kk0cgmlrjly92te) {
+  utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time on (April 23rd)[v:viv.time.Date] for (hyderabad)[v:viv.geo.SearchTerm] using (hanafi)[v:School:Hanafi] method")
+  plan (hY7NCoJAFIWPldkPbWoRQdCyRTTvEATtQtAXGPQyCurIOBpuevZmijCwaGDg8p3vzhzMsS0z3gol6yJmPE54wXzFW1JhmlOFXS+9kP4U9n+Euyx1KosKh3/iLSFFR2uUP0tduf1z3UuDKJEyw7JJGyZIMuvFvkwLjdWbnWotq1oIqjQ2X+CrQPdGQFxFSUgqx8IybVqyM9eEGRwMMMQILsbwMMHUMBhquU0s9czkoDvd7Jprd59bDw==)
+  last-modified (1549518716001)
+}

@@ -1,0 +1,33 @@
+structure (PrayerTimes) {
+  description (Describe the Prayers of the Day)
+  
+  property (prayers) {
+    type (Prayer)
+    min (Required) max (Many)
+  }
+  
+  property (schoolName) {
+    type (School)
+    min (Required) max (One)
+  }
+  
+  property (methodName) {
+    type (Method)
+    min (Required) max (One)
+  }
+  
+  property (resolvedAddress) {
+    type (geo.NamedPoint)
+    min (Required) max (One)
+  }
+  
+  property (date) {
+    type(time.Date)
+    min (Required) max (One)
+  }
+  
+  // property (latitudeAdjustmentMethod) {
+  //   type (LatitudeAdjustmentMethod)
+  //   min (Required) max (One)
+  // }
+}

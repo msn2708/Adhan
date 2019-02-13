@@ -1,0 +1,4 @@
+structure  (PrayerTime) {
+  description (__DESCRIPTION__)
+  extends (time.Time)
+}

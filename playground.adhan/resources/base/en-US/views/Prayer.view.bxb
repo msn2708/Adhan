@@ -1,0 +1,21 @@
+result-view {
+  match: Prayer (this)
+
+  // message { template ("This is a test...") }
+
+  render {
+    if (size(this) == 1) {
+      layout-match (this) {
+        mode (Details)
+      }
+    } else {
+      list-of (this) {
+        where-each (item) {
+          layout-match (item) {
+            mode (Summary)
+          }
+        }
+      }
+    }
+  }
+}

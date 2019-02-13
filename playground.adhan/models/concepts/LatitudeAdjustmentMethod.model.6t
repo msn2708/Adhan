@@ -1,0 +1,7 @@
+enum (LatitudeAdjustmentMethod) {
+  description (Dealing with regions of high latitude)
+  symbol (Middle of the Night)
+  symbol(One Seventh)
+  symbol(Angle Based)
+}
+

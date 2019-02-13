@@ -1,0 +1,9 @@
+structure (Prayer) {
+  description (Description of a Prayer)
+  property (prayerName) {
+    type (PrayerNames)
+  }
+  property (prayerTime) {
+    type (PrayerTime)
+  }
+}

@@ -1,0 +1,108 @@
+layout {
+  match: PrayerTimes (this)
+  mode (Details)
+
+  content {
+    section {
+      content {
+
+        compound-card {
+          content {
+            cell-area {
+              slot2 {
+                content {
+                  order (PrimarySecondary)
+                  primary {
+                    template("Fiqh")
+                  }
+                  secondary {                   
+                    template("#{value(this.schoolName)}")
+                  }
+                }
+              }
+            }
+            
+            cell-area {
+              slot2 {
+                content {
+                  order (PrimarySecondary)
+                  primary {
+                    template("Method")
+                  }
+                  secondary {
+                    template("#{value(this.methodName)}")
+                  }
+                }
+              }
+            }
+
+            cell-area {              
+              slot2 {
+                content {
+                  order (PrimarySecondary)
+                  primary {
+                    template("Date")
+                  }
+                  secondary {
+                    template("#{value(this.date.day)} #{value(this.date.month)}")
+                  }
+                }
+              }
+            }
+            map-card {
+              title-area {
+                halign (Center)
+                slot1 {
+                  text {
+                    value("")
+                    // value("#{value(this.resolvedAddress.name)}")
+                    // style(Title_S)
+                  }
+                }
+              }
+              size (S)
+              markers {
+                marker {
+                  geo (this.resolvedAddress.point)
+                }
+              }
+            }         
+          }
+        }
+
+
+        for-each (this.prayers) {
+          as (prayer) {
+            hbox {
+              content {
+                vbox {
+                  halign (Start)
+                  content {
+                    text {
+                      value("#{value(prayer.prayerName)}")
+                      style(Detail_L)
+                    }
+                  }
+                }
+                vbox {
+                  halign (Center) 
+                  content {
+                    text {
+                      value("#{value(prayer.prayerTime)}")
+                      style(Detail_L_Soft)
+                    }
+                  }
+
+                }
+              }
+            }
+            divider{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+enum (Method) {
+  description (The different methods used to compute PrayerTimes)
+  symbol(Shia Ithna-Ashari, Leva Institute, Qum)
+  symbol(University of Islamic Sciences, Karachi)
+  symbol(Islamic Society of North America (ISNA))
+  symbol(Muslim World League)
+  symbol(Umm Al-Qura University, Makkah)
+  symbol(Egyptian General Authority of Survey)
+  symbol(Institute of Geophysics, University of Tehran)
+  symbol(Gulf Region)
+  symbol(Kuwait)
+  symbol(Qatar)
+  symbol(Majlis Ugama Islam Singapura, Singapore)
+  symbol(Union Organization islamic de France)
+  symbol(Diyanet İşleri Başkanlığı, Turkey)
+  symbol(Custom)
+}
+

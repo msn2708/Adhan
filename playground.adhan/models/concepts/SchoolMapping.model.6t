@@ -1,0 +1,18 @@
+structure-enum (SchoolMapping) {
+  description (A mapping between schoolName and schoolNumber)
+  property (schoolName) {
+    type (School)
+    min (Required) max (One)
+  }
+  property (schoolNumber) {
+    type (SchoolNumber)
+  }
+  constant: SchoolMapping {
+    schoolName: (Shafi) 
+    schoolNumber : (0)
+  }
+  constant: SchoolMapping {
+    schoolName: (Hanafi) 
+    schoolNumber : (1)
+  }
+}

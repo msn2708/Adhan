@@ -1,0 +1,5 @@
+train (t-ugp9jfc552d7fibf7pvqml7q0) {
+  utterance ("[g:PrayerTimes] what time is (fajr)[v:PrayerNames:Fajr] at?")
+  plan (Y2BlkCnISaxML8ovzUvRS0zJSMzTCyhKrEwtCsnMTS1mkMeQdU8tQVagTkBBXX5BSWZ+XjGDNiGF5RmpRam6IBUFOB3llwiyk4WBkYGJgRlIMwBZIDYjAwwwATFQHAA=)
+  last-modified (1549517489105)
+}

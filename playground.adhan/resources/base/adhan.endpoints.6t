@@ -1,0 +1,17 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetPrayerTimes) {
+      accepted-inputs (date, method, school,latitudeAdjustmentMethod,prayerName,resolvedAddress,$vivContext)
+      local-endpoint ("GetPrayerTimes.js")
+    }
+    action-endpoint (ShowMethods) {
+      accepted-inputs (method)
+      local-endpoint ("ShowMethods.js")
+    }
+    
+    action-endpoint (GetAddressFromLocation) {
+      accepted-inputs (resolvedAddress)
+      local-endpoint ("GetAddressFromLocation.js")
+    }
+  }
+}

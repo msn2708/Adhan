@@ -1,0 +1,44 @@
+result-view {
+  match: PrayerTimes (this)
+
+  render {
+    if (size (this) == 1) {
+      layout-match (this) {
+        mode (Details)
+      }
+    } else {
+      list-of (this) {
+        has-details (true)
+
+        where-each-page (page) {
+          where-each-item (item) {
+            layout-match (item) {
+              mode (Details)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    switch(this.schoolName) {
+      case (Hanafi) {
+        conversation-driver {
+          template ("Shafi")
+        }    
+      }
+
+      case (Shafi) {
+        conversation-driver {
+          template ("Hanafi")
+        }
+      }
+    }
+
+    conversation-driver {
+      template ("Change Method")
+      //template("#{value(methodName)}")
+    }
+  }
+}

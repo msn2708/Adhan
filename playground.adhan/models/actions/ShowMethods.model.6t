@@ -1,0 +1,22 @@
+action (ShowMethods) {
+  type (Constructor)
+  description (Enumerate (and display) all Method values)
+
+  collect {
+    computed-input (method) {
+      type (Method)
+      min (Required) max (One)
+      compute {
+        intent {
+          goal: Method 
+          value-set {@prompt-behavior(AlwaysElicitation) Method}
+        }
+      }
+    }
+  }
+  output (Method) {
+    evaluate {
+      $expr(method)
+    }
+  }
+}

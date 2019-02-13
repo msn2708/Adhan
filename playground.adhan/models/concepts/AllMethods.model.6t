@@ -1,0 +1,7 @@
+structure (AllMethods) {
+  description (All possible methods)
+  property (methodName) {
+    type (Method)
+    min (Required) max (Many)
+  } 
+}

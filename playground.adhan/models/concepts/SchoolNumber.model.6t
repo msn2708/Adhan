@@ -1,0 +1,5 @@
+enum (SchoolNumber) {
+  description (__DESCRIPTION__)
+  symbol (0)
+  symbol (1)
+}

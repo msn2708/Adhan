@@ -1,0 +1,5 @@
+train (t-kxis2q9aauh3b1aqt8i8io065) {
+  utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time for (pleasanton)[v:viv.geo.SearchTerm] using (hanafi)[v:School:Hanafi] method")
+  plan (hY7BCoJAEIb/SrM61iGCoGOHyHfo1C0EfYElB3dBHVlXw0vPnluIgYUDAzPffMwMVtgXqWgSzVUe+yKWIvcDLRrSkcqoxGEwvZL5Fo4jwpMLozgvcRoTH5I0na1R/H3qJuzN7WAa3iVzinWtaj8h9q0XB6xyg03HLpXhskoSKg12P+DngX5HSELfZUQ6wxITTDGDAxdzeFi0BC2z1HLLvLbro6udd7rWfwE=)
+  last-modified (1549518734064)
+}
