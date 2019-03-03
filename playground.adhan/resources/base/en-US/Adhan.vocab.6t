@@ -1,8 +1,8 @@
 vocab (PrayerNames) {
   $sort-desc {"Imsak", "Fajr","Sunrise", "Dhuhr", "Asr", "Sunset", "Maghrib", "Isha", "Midnight"}
-  "Fajr" {"Fajr" "fudger" "fodjour" "fajar" "fodder" "fudge"}
+  "Fajr" {"Fajr" "fudger" "fodjour" "fajar" "fodder" "fudge" "father"}
   "Dhuhr" {"Dhuhr" "Zohar" "Dohar" "the heart"}
-  "Asr" {"Asr" "Awesome" "Azur" }
+  "Asr" {"Asr" "Awesome" "Azur" "Author" "After"}
   "Maghrib" {"Maghrib" "Maarib" "Moghreb" "money"}
   "Isha" {"Isha" "Asia" "Aricia" }
   "Imsak" {"Imsak"}
@@ -12,7 +12,7 @@ vocab (PrayerNames) {
 }
 
 vocab (School) {
-  "Shafi" {"Shafaii", "Shafi"}
+  "Shafi" {"Shafaii", "Shafi", "Shuffle"}
   "Hanafi" {"Hanafi"}
 }
 

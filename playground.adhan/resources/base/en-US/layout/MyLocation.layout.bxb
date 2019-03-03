@@ -1,0 +1,27 @@
+layout {
+  match: geo.NamedPoint (this)
+  mode (Summary)
+
+  content {
+    section {
+      content {
+        map-card {
+          markers {
+            marker {
+              geo (this.point)
+            }
+          }
+          size (S)
+          title-area {
+            halign (Start)
+            slot1 {
+              text {
+                value ("#{value(this)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

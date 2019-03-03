@@ -1,0 +1,22 @@
+action (PromptUserForLocation) {
+  type(Constructor)
+  description (__DESCRIPTION__)
+  collect {
+    computed-input (userPromptedLocation) {
+      default-select {
+        with-learning
+        with-rule {
+          select-first
+        }
+      }
+      type (geo.NamedPoint)
+      compute {
+        intent {
+          goal: geo.NamedPoint
+          value-set { geo.NamedPoint @prompt-behavior(AlwaysElicitation) }
+        }
+      }
+    }
+  }
+  output (geo.NamedPoint)
+}

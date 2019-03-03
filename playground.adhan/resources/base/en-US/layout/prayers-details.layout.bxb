@@ -1,0 +1,47 @@
+layout-macro-def (prayers-details) {
+  params {
+    param (prayers) {
+      type (Prayer)
+      max (Many) min (Required)
+    }
+  }
+  content {
+    section {
+      content {
+        for-each (prayers) {
+          as (prayer) {
+            hbox {
+              content {
+                vbox {
+                  halign (Start)
+                  content {
+                    single-line {
+                      text {
+                        style(Title_S)
+                        value("#{value(prayer.prayerName)}")
+                      }
+                    }
+                  }
+                }
+                vbox {
+                  halign (End) 
+                  content {
+                    single-line {
+                      text {
+                        style(Title_S)
+                        value("#{value(prayer.prayerTime)}")
+                      }
+                    }
+                  }
+
+                }
+              }
+            }
+            divider{
+            } 
+          }          
+        }
+      }
+    }
+  }
+}

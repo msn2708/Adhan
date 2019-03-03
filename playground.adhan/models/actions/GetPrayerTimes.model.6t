@@ -60,31 +60,6 @@ action (GetPrayerTimes) {
       }
     }
 
-    //     input (resolvedAddress) {
-    //       min (Required)
-    //       type (geo.NamedPoint)
-    // 
-    //       default-init {
-    //         if ($user.currentLocation.$exists) {
-    //           intent {
-    //             goal: geo.NamedPoint
-    //             value-set: geo.CurrentLocation { $expr ($user.currentLocation) }
-    //           }
-    //         } else {
-    //           intent {
-    //             goal: geo.NamedPoint
-    //             value-set { geo.NamedPoint @prompt-behavior(AlwaysElicitation) }
-    //           }
-    //         }
-    //       }
-    // 
-    //       default-select {
-    //         with-learning
-    //         with-rule {
-    //           select-first
-    //         }
-    //       }
-    //     }
     input-group(where-group) {
       requires (OneOf)
       collect {
@@ -127,13 +102,13 @@ action (GetPrayerTimes) {
       compute {
         if (exists(whereFromHistoryOrInput)) {
           intent {
-            goal{geo.NamedPoint}
-            value{$expr(whereFromHistoryOrInput)}
+            goal {geo.NamedPoint}
+            value {$expr(whereFromHistoryOrInput)}
           }
         } else {
           intent {
-            goal{geo.NamedPoint}
-            value{$expr(whereFromCurrentLocation)}
+            goal {geo.NamedPoint}
+            value {$expr(whereFromCurrentLocation)}
           }
         }
       }

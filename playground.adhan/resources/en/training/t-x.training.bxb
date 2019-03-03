@@ -1,0 +1,5 @@
+train (t-xtk6acrauzyrah6371nq3qilm) {
+  utterance ("[g:PrayerTimes] what time is (asr)[v:PrayerNames:Asr] according to (hanafi)[v:School:Hanafi] fiqh")
+  plan (Y2BjEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZlDBqaI8I7UoVTe9KL+0ANNiv0SQ8QII4eDkjPz8HAZWBkYGJgZmBhYgiwHIBvGYgCQCMAMxWBYA)
+  last-modified (1551550994229)
+}

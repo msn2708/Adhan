@@ -1,5 +1,5 @@
 train (t-oq4ov2ejobikinvpwej2qregn) {
-  utterance ([g:GetPrayerTimes:continue,r:ShowMethods] Change method)
-  plan (Y2BjkCnISaxML8ovzUvRS0zJSMzTCyhKrEwtCsnMTS1mkMeQdU8tQVagTkBBXX5BSWZ+XjGDNiGF5RmpRam6IBUFDOIYin1TSzLyU7C4NjgjvxwiWczAysDIwMTAzMACZDEA2SAeC5CEABDNBCSBcgA=)
-  last-modified (1549517488921)
+  utterance ([g:GetPrayerTimes:prompt,r:ShowMethods] Change method)
+  plan (Y2BjEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZlDBqaI8I7UoVTe9KL+0gEEAoco3tSQjPwXZKcEZ+eUQ0WIGVgZGBiYGZgYWIIsByAbxWIAkBIBoJiAJlAMA)
+  last-modified (1551573965871)
 }

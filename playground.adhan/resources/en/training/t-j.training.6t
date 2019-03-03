@@ -1,5 +1,5 @@
 train (t-jky7weltvlr433wexd67y1r3p) {
-  utterance ("[g:GetPrayerTimes:continue] (Hanafi)[v:School:Hanafi]")
-  plan (Y2BlkCnISaxML8ovzUvRS0zJSMzTCyhKrEwtCsnMTS1mkMeQdU8tQVagTkBBXX5BSWZ+XjGDNiGF5RmpRam6IBUFDOIYioOTM/LzcxhYGBgZmBiYgTQDkAViMzLAAIgNFAcA)
-  last-modified (1549517488357)
+  utterance ("[g:GetPrayerTimes:prompt] (Hanafi)[v:School:Hanafi]")
+  plan (Y2BlEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZlDBqaI8I7UoVTe9KL+0gEEAoSo4OSM/P4eBhYGRgYmBGUgzAFkgNiMDDIDYQHEA)
+  last-modified (1551574610021)
 }

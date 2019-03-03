@@ -1,0 +1,101 @@
+layout-macro-def (prayertimes-details) {
+  params {
+    param (prayerTimes) {
+      type (PrayerTimes)
+      max (One) min (Required)
+    }
+  }
+
+  content {
+    section {
+      content {
+        compound-card {
+          content {
+
+            hbox {
+              content {
+                vbox {
+                  halign (Start)
+                  content {
+                    single-line {
+                      text {
+                        value("Fiqh")
+                        style(Title_XS)
+                      }
+                    }
+                  }
+                }
+
+                vbox {
+                  halign (Start)
+                  valign (Top)
+                  content {
+                    single-line {
+                      text {
+                        value("#{value(prayerTimes.schoolName)}")
+                        style(Detail_M_Soft)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            divider{}
+            hbox {
+              content {
+                vbox {
+                  halign (Start)
+                  content {
+                    single-line {
+                      text {
+                        value("Method")
+                        style(Title_XS)
+                      }
+                    }
+                  }
+                }
+
+                vbox {
+                  halign (Center)
+                  content {
+                    single-line {
+                      text {
+                        value("#{value(prayerTimes.methodName)}")
+                        style(Detail_M_Soft)
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            divider{}
+
+            map-card {
+              title-area {
+                halign (Center)
+                slot1 {
+                  text {
+                    value("")
+                    // value("#{value(this.resolvedAddress.name)}")
+                    // style(Title_S)
+                  }
+                }
+              }
+              size (M)
+              zoom ("11")
+              markers {
+                marker {
+                  geo (prayerTimes.resolvedAddress.point)
+                }       
+              }
+            }
+            divider{}
+          }
+        }
+      }
+    }
+
+  }
+}
+
+

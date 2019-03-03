@@ -1,0 +1,5 @@
+train (t-1vao6x14fu2zv3cwyhf34c3hs) {
+  utterance ("[g:PrayerTimes] what time is (asr)[v:PrayerNames:Asr]")
+  plan (Y2BlEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZlDBqaI8I7UoVTe9KL+0ANNiv0SQ8SwMjAxMDMxAmgHIArEZGWCACYiB4gA=)
+  last-modified (1551550885779)
+}

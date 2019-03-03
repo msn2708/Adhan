@@ -10,10 +10,7 @@ result-view {
       }
     } else {
       list-of (this) {
-        where-each (item) {
-          layout-match (item) {
-            mode (Summary)
-          }
+        where-each (item) {          
         }
       }
     }

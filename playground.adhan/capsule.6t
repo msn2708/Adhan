@@ -1,5 +1,5 @@
 capsule {
-  id (playground.adhan)
+  id (vox.adhan)
   version (0.1.0)
   format (3)
   targets {

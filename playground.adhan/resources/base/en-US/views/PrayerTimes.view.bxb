@@ -1,24 +1,24 @@
 result-view {
-  match: PrayerTimes (this)
+  match {
+    PrayerTimes(this)
+  }
 
   render {
-    if (size (this) == 1) {
-      layout-match (this) {
-        mode (Details)
-      }
-    } else {
-      list-of (this) {
-        has-details (true)
 
-        where-each-page (page) {
-          where-each-item (item) {
-            layout-match (item) {
-              mode (Details)
-            }
+    if (size(this) == 1) {   
+      layout {
+        layout-macro (prayertimes-details) {        
+          param(prayerTimes) {
+            expression (this)
           }
         }
+        layout-macro (prayers-details) {
+          param(prayers) {
+            expression (this.prayers)
+          }        
+        }
       }
-    }
+    }     
   }
 
   conversation-drivers {
@@ -38,7 +38,18 @@ result-view {
 
     conversation-driver {
       template ("Change Method")
-      //template("#{value(methodName)}")
+    }
+  }
+
+  followup {
+    prompt {
+      dialog (Would you like to search for a different city?)
+      on-confirm {
+        intent {
+          goal: PrayerTimes
+          route {PromptUserForLocation}
+        }
+      }
     }
   }
 }

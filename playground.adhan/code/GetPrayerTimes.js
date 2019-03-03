@@ -1,5 +1,3 @@
-// function getPrayerTimes (address, currentLocation, currentAddress, resolvedAddress, prayerName, date, method, school, latitudeAdjustmentMethod) {
-// function getPrayerTimes (address, currentLocation, resolvedAddress, prayerName, date, method, school, latitudeAdjustmentMethod) {
 function getPrayerTimes (date, method, school, prayerName, latitudeAdjustmentMethod,resolvedAddress,$vivContext) {
 
   if (resolvedAddress.adress != null) {

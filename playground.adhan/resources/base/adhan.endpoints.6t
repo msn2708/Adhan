@@ -8,10 +8,10 @@ endpoints {
       accepted-inputs (method)
       local-endpoint ("ShowMethods.js")
     }
-    
-    action-endpoint (GetAddressFromLocation) {
-      accepted-inputs (resolvedAddress)
-      local-endpoint ("GetAddressFromLocation.js")
+    action-endpoint (PromptUserForLocation) {
+      accepted-inputs (userPromptedLocation)
+      local-endpoint ("getUserPromptedLocation.js")
     }
+
   }
 }
