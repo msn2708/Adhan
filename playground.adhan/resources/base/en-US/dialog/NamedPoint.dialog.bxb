@@ -1,0 +1,4 @@
+dialog (Elicitation) {
+  match: geo.NamedPoint(this)
+  template("Which city should I lookup?")
+}

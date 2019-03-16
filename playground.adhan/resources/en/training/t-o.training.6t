@@ -1,5 +1,5 @@
 train (t-oq4ov2ejobikinvpwej2qregn) {
-  utterance ([g:GetPrayerTimes:prompt,r:ShowMethods] Change method)
+  utterance ([g:GetPrayerTimes:continue,r:ShowMethods] Change method)
   plan (Y2BjEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZlDBqaI8I7UoVTe9KL+0gEEAoco3tSQjPwXZKcEZ+eUQ0WIGVgZGBiYGZgYWIIsByAbxWIAkBIBoJiAJlAMA)
-  last-modified (1551573965871)
+  last-modified (1551603639922)
 }

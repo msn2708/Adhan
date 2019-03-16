@@ -1,3 +1,8 @@
+train (t-f1lmi3mavtg7a71iwnrim8sf3) {
+  utterance ("[g:PrayerTimes] when is (fajr)[v:PrayerNames:Fajr] in (hyderabad)[v:geo.SearchTerm]")
+  plan (dY/LCsIwEEVv1PrYKoLuXLg1/+DKnRTsDwQ7pFmkU5K06sZvN1JLBe1shjnncmGwwLrhu1R5oUqZOvUglxlLHpsenyh8m92QeXIVDJce+8HErSBHB+24rrBsTCM1sTwrS3nKpgxYdexYB/a11uQDtn9g29R3XEi5a5GRs78Pvfs95hAYYYwJEkwxizciER+SRCfQTrcRHdrkCw==)
+  last-modified (1551934020434)
+}
 train (t-fb90msvw8l94dm5welxxv79j0) {
   utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time using (hanafi)[v:School:Hanafi] method for (hyderabad)[v:geo.SearchTerm] on (april 23rd)[v:time.DateTimeExpression] ")
   plan (dY/LCsIwEEVv6/sFogiKGxduzT8IijsR9AeCHdqC7ZQkrbrx202tUkUdSMg9M3Mg6GKU8UVIL5Cx2Cl5JXUII9IYl3hD5r0z+9e5cWJCjjV6WZgJY5FYSUOYfsR8dH1JFGlthzH/azsHpGjhK04TDHKFTyy2MiJvx2FsMHyxZWpYp75P2mDyAxam0rEnqY7BgVT0/fncr9Ev8f4YMJ/QgQMXFVRRQx0NNNFC21I8ufPkDZtcm/JyH3fxLqpmT7FXBe4=)
