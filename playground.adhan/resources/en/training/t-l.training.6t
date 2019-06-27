@@ -1,5 +1,5 @@
 train (t-leck166qqjhyflj1xh0kry22p) {
-  utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time for (pleasanton)[v:viv.geo.SearchTerm] using (hanafi)[v:School:Hanafi] method on (August 3rd 2018)[v:viv.time.Date]")
-  plan (dY/NCoJQFITHLPsjiCKoXYu23XcIgnYh2Atc9KBCeuTeq9WmZ09LMSjPas43zMBgilXBdyGDSKbCVfJB6hInpLFu8YnMt7Ptcp6cmZhTjVkRF8KUSBylIew6A7eIFO1DxXmGRRUKicVZJhS4HKcGy4YdcsM6D0PSBps/8NPUdngklR9dSCW/+6p+jXmLPT9ivmICCz3Y6GMAB0OMMC4Z3tSqqVPq6muuVSh91BkbeAE=)
-  last-modified (1551551117395)
+  utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time for (pleasanton)[v:viv.geo.SearchTerm] using (hanafi)[v:School:Hanafi] method on (August 3rd 2018)[v:time.DateTimeExpression]")
+  plan (dY/LCsIwEEVv6/sFogiKGxduzT8IijsR9AeCHdqC7ZQkrbrx202tUkUdSMg9M3Mg6GKU8UVIL5Cx2Cl5JXUII9IYl3hD5r0z+9e5cWJCjjV6WZgJY5FYSUOYfsR8dH1JFGlthzH/azsHpGjhK04TDHKFTyy2MiJvx2FsMHyxZWpYp75P2mDyAxam0rEnqY7BgVT0/fncr9Ev8f4YMJ/QgQMXFVRRQx0NNNFC21I8ufPkDZtcm/JyH3fxLqpmT7FXBe4=)
+  last-modified (1553451912665)
 }

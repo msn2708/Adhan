@@ -1,7 +1,7 @@
 dialog (Result) {
   match: PrayerTimes(this)
   if(size(this.prayers) == 1) {
-    template("In #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)} #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)}. ")
+    template("According to #{value(this.methodName)}, on #{value(this.date)}, #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)} in #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}. ")
   } else {
     if (exists(this.resolvedAddress.address.locality)) {
       template("Here are Prayer times for #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}. ")

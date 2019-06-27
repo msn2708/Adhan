@@ -1,0 +1,5 @@
+train (t-2k7e6c9800rkrqgo2bn96hetb) {
+  utterance ("[g:PrayerTimes] what time is (asr)[v:PrayerNames:Asr] in (Jakarta)[v:geo.SearchTerm] on the (25th December, 2012)[v:time.DateTimeExpression]")
+  plan (dY9NCsIwEEa/1mr9wY0iKG5cuDV3EBR3UrAXCHZou2hTkrTqxrObWKWKdiCTzJvJg8EIs0pcGY8SnrNA8hvJMM1IYd7gA+nPzqqtcxeFTkWuMK7SimmD2I5rwvKrtKP7ayFJKTOMdavtkpCkTSxFWWBiFTEJduQZRYFIc43pm21LLVQZx6Q0Fn9gbWocJ+LynIQks9/lrV9hCAcuOvDQRQ8++hgYhhd1XtQ3lQMb7jPXbxueOfaHuR8=)
+  last-modified (1553451951051)
+}

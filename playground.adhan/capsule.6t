@@ -1,5 +1,5 @@
 capsule {
-  id (vox.adhan)
+  id (viv.adhan)
   version (0.1.0)
   format (3)
   targets {

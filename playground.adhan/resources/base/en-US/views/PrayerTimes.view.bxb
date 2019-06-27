@@ -43,7 +43,7 @@ result-view {
 
   followup {
     prompt {
-      dialog (Would you like to search for a different city?)
+      dialog (Would you like to get prayer times for a different city?)
       on-confirm {
         intent {
           goal: PrayerTimes
