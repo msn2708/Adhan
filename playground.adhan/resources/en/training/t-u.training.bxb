@@ -1,5 +1,5 @@
-train (t-h3835a2bq9kk0cgmlrjly92te) {
-  utterance ("[g:PrayerTimes] get (asr)[v:PrayerNames:Asr] time on (April 23rd)[v:time.DateTimeExpression] for (hyderabad)[v:viv.geo.SearchTerm] using (hanafi)[v:School:Hanafi] method")
+train (t-uh07bqv9hr90ylofmlnptnh46) {
+  utterance ("[g:PrayerTimes] what time is (asr)[v:PrayerNames:Asr] (3 weeks from now)[v:time.DateTimeExpression] in (oslo)[v:geo.SearchTerm] according to (hanafi)[v:School:Hanafi] fiqh")
   plan (dY/LCsIwEEVv6/sFogiKGxduzT8IijsR9AeCHdqC7ZQkrbrx202tUkUdSMg9M3Mg6GKU8UVIL5Cx2Cl5JXUII9IYl3hD5r0z+9e5cWJCjjV6WZgJY5FYSUOYfsR8dH1JFGlthzH/azsHpGjhK04TDHKFTyy2MiJvx2FsMHyxZWpYp75P2mDyAxam0rEnqY7BgVT0/fncr9Ev8f4YMJ/QgQMXFVRRQx0NNNFC21I8ufPkDZtcm/JyH3fxLqpmT7FXBe4=)
-  last-modified (1561663281400)
+  last-modified (1561669299980)
 }

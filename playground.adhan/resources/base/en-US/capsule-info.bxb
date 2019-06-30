@@ -1,0 +1,36 @@
+capsule-info {
+  display-name (Prayer Times)
+  description (Calculate the prayer times for any place, time and using many of the approved methods.)
+  privacy-policy-url (http://my-capsule.com/en/privacy-policy)
+  terms-url (http://my-capsule.com/en/TandC)
+  icon-asset (/images/mosque.jpeg)
+  search-keywords {
+    keyword (namaz)
+    keyword (prayer times)
+    keyword (salah)
+    keyword (salat)
+    keyword (Islamic prayer times)
+    keyword (solat)
+    keyword (sholat)
+    keyword (sembahyang)
+    keyword (lamaz)
+  }
+  dispatch-name (prayer times)
+  dispatch-aliases {
+    alias (namaz time)
+    alias (salath time)
+    alias (solat time)
+    alias (salah time)
+  }
+  action-bg-color (#FFC50A)
+  action-fg-color (#443D32)
+  // android-app-id (myActionId)
+  developer-name (Vox Solutions)
+  // icon-asset (/images/icons/icon.png)
+  // screenshots {
+  //   assets (/images/screenshots/screenshot1.jpg)
+  //   assets (/images/screenshots/screenshot2.jpg)
+  //   assets (/images/screenshots/screenshot3.jpg)
+  //   assets (/images/screenshots/screenshot4.jpg)
+  // }
+}

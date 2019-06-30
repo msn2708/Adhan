@@ -1,5 +1,8 @@
 function getPrayerTimes (date, method, school, prayerName, latitudeAdjustmentMethod,resolvedAddress,$vivContext) {
 
+  var dates = require ('dates')
+  var http = require ('http')
+  
   if (resolvedAddress.adress != null) {
         var url = buildUrl (resolvedAddress, date, method, school, latitudeAdjustmentMethod)
   } else {
@@ -66,7 +69,7 @@ function buildUrlByLatLang (resolvedAddress, date, method, schoolName, latitudeA
     url = url + "&latitudeAdjustmentMethod=" + latitudeAdjustmentMethod
   }
 
-  return url
+  return url + '&in_client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
 }
 
 function buildUrl (resolvedAddress, date, method, schoolName, latitudeAdjustmentMethod)
@@ -86,10 +89,11 @@ function buildUrl (resolvedAddress, date, method, schoolName, latitudeAdjustment
     url = url + "&latitudeAdjustmentMethod=" + latitudeAdjustmentMethod
   }
 
-  return url
+  return url + '&in_client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
 }
 
 function parsePrayerTime (prayerTime, timezone) {
+  var dates = require ('dates')
   var zonedDateTime = dates.ZonedDateTime.parseTime (prayerTime, "HH:mm", timezone )
   return {hour:zonedDateTime.getHour(), minute:zonedDateTime.getMinute(), second:0 ,timezone:timezone}
 }

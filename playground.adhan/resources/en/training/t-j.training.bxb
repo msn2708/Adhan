@@ -1,0 +1,5 @@
+train (t-jolfne76ujur3cskvfx4d23b0) {
+  utterance ("[g:PrayerTimes] what time is (fajr)[v:PrayerNames:Fajr] (two weeks from now)[v:time.DateTimeExpression]")
+  plan (Y2BnEC3Lr9BLTMlIzNMLKEqsTC0KycxNLWaQQAi7p5YgyyjgkqnLLyjJzM8rZuAtyyzTKwEK6bkklqQySKNwQUpdKwqKUouLgYoZVHCaVp6RWpSqm16UX1qA6Ui/RJBT2BgYGZgYmBlYGFiBbAYoD0QyMoAAEwMEMAMxG1AVAwA=)
+  last-modified (1561653415735)
+}

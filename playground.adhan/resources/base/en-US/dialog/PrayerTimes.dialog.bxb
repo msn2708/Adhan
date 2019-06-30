@@ -1,10 +1,14 @@
 dialog (Result) {
   match: PrayerTimes(this)
+  // template("According to #{value(this.methodName)}, here are the prayer times on #{value(this.date)}.")
+
   if(size(this.prayers) == 1) {
-    template("According to #{value(this.methodName)}, on #{value(this.date)}, #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)} in #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}. ")
-  } else {
-    if (exists(this.resolvedAddress.address.locality)) {
-      template("Here are Prayer times for #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}. ")
+    if(exists(this.resolvedAddress.address.locality) && exists(this.resolvedAddress.address.country)) {
+      template("According to #{value(this.methodName)}, on #{value(this.date)}, #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)} in #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}. ")
+    } else-if () {
+      template("According to #{value(this.methodName)}, on #{value(this.date)}, #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)} ")
     }
+  } else {
+    template("Here are prayer times for your current location on #{value(this.date)}, according to #{value(this.schoolName)} fiqh and calculated by the method given by #{value(this.methodName)}.")
   }
 }

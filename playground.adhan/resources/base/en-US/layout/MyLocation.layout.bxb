@@ -11,7 +11,7 @@ layout {
               geo (this.point)
             }
           }
-          size (S)
+          aspect-ratio (16:9)
           title-area {
             halign (Start)
             slot1 {

@@ -2,8 +2,10 @@ structure (Prayer) {
   description (Description of a Prayer)
   property (prayerName) {
     type (PrayerNames)
+    min (Required) max (One)
   }
   property (prayerTime) {
     type (PrayerTime)
+     min (Required) max (One)
   }
 }

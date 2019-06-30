@@ -1,0 +1,9 @@
+hints {
+  uncategorized {
+    utterance (what time is asr)
+    utterance (what time is asr in Medina this Wednesday according to hanafi fiqh)
+    utterance (get prayer times)
+    utterance (what time is fajr two weeks from now)
+    utterance (what time is asr, in Oslo, according to hanafi fiqh, 3 weeks from now?)
+  }
+}

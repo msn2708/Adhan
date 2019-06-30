@@ -14,46 +14,17 @@ layout-macro-def (prayertimes-details) {
 
             hbox {
               content {
-                vbox {
-                  halign (Start)
-                  content {
-                    single-line {
-                      text {
-                        value("Fiqh")
-                        style(Title_XS)
-                      }
-                    }
-                  }
-                }
-
-                vbox {
-                  halign (Start)
-                  valign (Top)
-                  content {
-                    single-line {
-                      text {
-                        value("#{value(prayerTimes.schoolName)}")
-                        style(Detail_M_Soft)
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            divider{}
-            hbox {
-              content {
-                vbox {
-                  halign (Start)
-                  content {
-                    single-line {
-                      text {
-                        value("Method")
-                        style(Title_XS)
-                      }
-                    }
-                  }
-                }
+                // vbox {
+                //   halign (Start)
+                //   content {
+                //     single-line {
+                //       text {
+                //         value("Fiqh")
+                //         style(Title_XS)
+                //       }
+                //     }
+                //   }
+                // }
 
                 vbox {
                   halign (Center)
@@ -61,7 +32,20 @@ layout-macro-def (prayertimes-details) {
                     single-line {
                       text {
                         value("#{value(prayerTimes.methodName)}")
-                        style(Detail_M_Soft)
+                        style(Detail_L)
+                      }
+                    }
+                  }
+                }
+                
+                vbox {
+                  halign (Start)
+                  valign (Top)
+                  content {
+                    single-line {
+                      text {
+                        value("#{value(prayerTimes.schoolName)}")
+                        style(Detail_L)
                       }
                     }
                   }
@@ -69,6 +53,34 @@ layout-macro-def (prayertimes-details) {
               }
             }
             divider{}
+//             hbox {
+//               content {
+//                 vbox {
+//                   halign (Start)
+//                   content {
+//                     single-line {
+//                       text {
+//                         value("Method")
+//                         style(Title_XS)
+//                       }
+//                     }
+//                   }
+//                 }
+// 
+//                 vbox {
+//                   halign (Center)
+//                   content {
+//                     single-line {
+//                       text {
+//                         value("#{value(prayerTimes.methodName)}")
+//                         style(Detail_M_Soft)
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//             divider{}
 
             map-card {
               title-area {
@@ -81,7 +93,7 @@ layout-macro-def (prayertimes-details) {
                   }
                 }
               }
-              size (M)
+              aspect-ratio (16:9)
               zoom ("11")
               markers {
                 marker {
