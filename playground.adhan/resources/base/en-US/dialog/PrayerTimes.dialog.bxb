@@ -10,9 +10,9 @@ dialog (Result) {
     }
   } else {
     if(exists(this.resolvedAddress.address.locality) && exists(this.resolvedAddress.address.country)) {
-      template("According to #{value(this.methodName)}, on #{value(this.date)}, #{value(this.prayers.prayerName)} is at #{value(this.prayers.prayerTime)} in #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)}.")      
+      template("Here are prayer times for #{value(this.resolvedAddress.address.locality)}, #{value(this.resolvedAddress.address.country)} on #{value(this.date)}, according to #{value(this.schoolName)} fiqh and calculated by the method given by #{value(this.methodName)}.")      
     } else {
-      template("Here are prayer times for your current location on #{value(this.date)}, according to #{value(this.schoolName)} fiqh and calculated by the method given by #{value(this.methodName)}.")
+      template("Here are the prayer times for your current location, according to #{value(this.schoolName)} fiqh, on #{value(this.date)}, and calculated by the method given by #{value(this.methodName)}.")
     }
   }
 }

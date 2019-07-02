@@ -12,7 +12,7 @@ vocab (PrayerNames) {
 }
 
 vocab (School) {
-  "Shafi" {"Shafaii", "Shafi", "Shuffle"}
+  "Shafii" {"Shafii" "Shafaii", "Shafi", "Shuffle"}
   "Hanafi" {"Hanafi"}
 }
 

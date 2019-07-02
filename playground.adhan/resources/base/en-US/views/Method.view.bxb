@@ -1,0 +1,22 @@
+input-view {
+  match {
+    Method(method)
+  }
+  // message (Select Method)
+
+  render {
+    selection-of (method) {
+      where-each (method) {
+        cell-card { 
+          slot2 { 
+            content { 
+              primary { 
+                template ("#{value(method)}") 
+              } 
+            } 
+          } 
+        } 
+      }
+    }
+  }
+}

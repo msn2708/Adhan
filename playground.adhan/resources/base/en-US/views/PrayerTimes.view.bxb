@@ -25,11 +25,11 @@ result-view {
     switch(this.schoolName) {
       case (Hanafi) {
         conversation-driver {
-          template ("Shafi")
+          template ("Shafii")
         }    
       }
 
-      case (Shafi) {
+      case (Shafii) {
         conversation-driver {
           template ("Hanafi")
         }

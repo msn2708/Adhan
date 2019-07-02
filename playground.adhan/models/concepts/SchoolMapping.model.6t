@@ -8,11 +8,11 @@ structure-enum (SchoolMapping) {
     type (SchoolNumber)
   }
   constant: SchoolMapping {
-    schoolName: (Shafi) 
-    schoolNumber : (0)
+    schoolName: (Shafii) 
+    schoolNumber: (0)
   }
   constant: SchoolMapping {
     schoolName: (Hanafi) 
-    schoolNumber : (1)
+    schoolNumber: (1)
   }
 }

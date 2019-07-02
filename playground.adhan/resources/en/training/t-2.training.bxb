@@ -4,7 +4,7 @@ train (t-2k7e6c9800rkrqgo2bn96hetb) {
   last-modified (1553451951051)
 }
 train (t-2ro28fsrqxdwfhmxorcmv9zw4) {
-  utterance ("[g:vox.adhan.PrayerTimes] show me (asr)[v:vox.adhan.PrayerNames:Asr] time in (oslo)[v:viv.geo.SearchTerm] (3 weeks from now)[v:viv.time.DateTimeExpression] according to (hanafi)[v:vox.adhan.School:Hanafi] fiqh")
+  utterance ("[g:PrayerTimes] show me (asr)[v:PrayerNames:Asr] time in (oslo)[v:viv.geo.SearchTerm] (3 weeks from now)[v:viv.time.DateTimeExpression] according to (hanafi)[v:School:Hanafi] fiqh")
   plan (dY/LCsIwEEVv6/sFogiKGxduzT8IijsR9AeCHdqC7ZQkrbrx202tUkUdSMg9M3Mg6GKU8UVIL5Cx2Cl5JXUII9IYl3hD5r0z+9e5cWJCjjV6WZgJY5FYSUOYfsR8dH1JFGlthzH/azsHpGjhK04TDHKFTyy2MiJvx2FsMHyxZWpYp75P2mDyAxam0rEnqY7BgVT0/fncr9Ev8f4YMJ/QgQMXFVRRQx0NNNFC21I8ufPkDZtcm/JyH3fxLqpmT7FXBe4=)
-  last-modified (1561669427767)
+  last-modified (1562036682827)
 }

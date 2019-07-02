@@ -26,7 +26,7 @@ function getPrayerTimes (date, method, school, prayerName, latitudeAdjustmentMet
 
 function schoolMapping (schoolName) {
   switch (schoolName.toString()) {
-    case 'Shafi': return 0;
+    case 'Shafii': return 0;
     case 'Hanafi': return 1;
     default: return 0;
   }
@@ -69,7 +69,7 @@ function buildUrlByLatLang (resolvedAddress, date, method, schoolName, latitudeA
     url = url + "&latitudeAdjustmentMethod=" + latitudeAdjustmentMethod
   }
 
-  return url + '&in_client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
+  return url + '&client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
 }
 
 function buildUrl (resolvedAddress, date, method, schoolName, latitudeAdjustmentMethod)
@@ -89,7 +89,7 @@ function buildUrl (resolvedAddress, date, method, schoolName, latitudeAdjustment
     url = url + "&latitudeAdjustmentMethod=" + latitudeAdjustmentMethod
   }
 
-  return url + '&in_client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
+  return url + '&client_id=GNpLZpUYOat7n0a5mQfy57zwMiXtKowS'
 }
 
 function parsePrayerTime (prayerTime, timezone) {

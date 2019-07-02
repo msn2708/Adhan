@@ -1,4 +1,4 @@
 dialog (Selection) {
   match: Method (this)
-  template("Select a method to calculate Prayer Times.")
+  // template("Select a method to calculate Prayer Times.")
 }
